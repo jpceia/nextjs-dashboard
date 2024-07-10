@@ -1,11 +1,11 @@
 {
   "extends": [
-    "eslint:recommended",
+    "next",
+    "next/core-web-vitals",
     "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
-    "next",
-    "next/core-web-vitals",
+    "eslint:recommended",
     "prettier",
     "plugin:prettier/recommended"
   ],
@@ -27,6 +27,13 @@
     "es2021": true,
     "node": true
   },
-  "plugins": ["@typescript-eslint", "react", "react-hooks"],
+  "rules": {
+    "react/react-in-jsx-scope": "off"
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "react",
+    "react-hooks"
+  ],
   "root": true
 }
